@@ -1,0 +1,1062 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1f2029 ;
+  }
+  
+  #menu {
+    z-index: 2;
+  }
+  
+  #menu-bar {
+    width: 45px;
+    height: 40px;
+    margin: 20px 0 20px 20px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    height: 5px;
+    width: 100%;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  #bar1 {
+    transform: translateY(-4px);
+  }
+  
+  #bar3 {
+    transform: translateY(4px);
+  }
+  
+  .nav {
+    transition: 0.3s ease;
+    display: none;
+  }
+  
+  .nav ul {
+    padding: 0 22px;
+  }
+  
+  .nav li {
+    list-style: none;
+    padding: 12px 0;
+  }
+  
+  .nav li a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .nav li a:hover {
+    font-weight: bold;
+  }
+
+  
+  
+  .menu-bg, #menu {
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+  
+  .menu-bg {
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background: radial-gradient(circle, #0522dc, #dc052c77);
+    border-radius: 50%;
+    transition: 0.3s ease;
+  }
+  
+  .change {
+    display: block;
+  }
+  
+  .change .bar {
+    background-color: white;
+  }
+  
+  .change #bar1 {
+    transform: translateY(4px) rotateZ(-45deg);
+  }
+  
+  .change #bar2 {
+    opacity: 0;
+  }
+  
+  .change #bar3 {
+    transform: translateY(-6px) rotateZ(45deg);
+  }
+  
+  .change-bg {
+    width: 520px;
+    height: 460px;
+    transform: translate(-60%,-30%);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*BARRA DE BUSCA*/
+
+
+#divBusca {
+  display: flex; /* Para alinhar os itens dentro da barra de busca */
+  align-items: center; /* Centraliza verticalmente os itens */
+  background-color: #ffffff;
+  border: solid 2px #5f88a0;
+  border-radius: 10px;
+  width: 1200px; /* Aumentando a largura da barra */
+  height: 45px; /* Aumentando a altura da barra */
+  margin: 14px 500px 0px auto; /* Margem ajustada para o posicionamento */
+}
+
+#txtBusca {
+  background-color: transparent;
+  padding-left: 10px; /* Aumentando o padding para mais conforto */
+  font-size: 20px; /* Aumentando o tamanho da fonte */
+  border: none;
+  height: 45px; /* Ajustando a altura do campo de texto */
+  flex-grow: 1; /* Para ocupar o espaço disponível */
+}
+
+#btnBusca {
+  border: none;
+  height: 45px; /* Ajustando a altura do botão */
+  border-radius: 0 7px 7px 0;
+  width: 100px; /* Aumentando a largura do botão */
+  font-weight: bold;
+  background: linear-gradient(135deg, #1b91ff, #4CAF50); /* Gradiente de cor */
+  color: white; /* Cor do texto */
+  cursor: pointer; /* Muda o cursor para pointer */
+  transition: background 0.3s ease, transform 0.2s ease; /* Transições suaves */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+#btnBusca:hover {
+  background: linear-gradient(135deg, #1cffbb, #5F9EA0); /* Muda a cor ao passar o mouse */
+  transform: scale(1.05); /* Leve aumento no tamanho */
+}
+
+#btnBusca:active {
+  transform: scale(0.95); /* Leve diminuição ao clicar */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Sombra mais intensa ao clicar */
+}
+
+
+
+
+
+
+/*PROFILE BOTAO*/
+
+   
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a2e; /* Fundo escuro */
+  font-family: 'Arial', sans-serif;
+}
+.profile-container {
+  position: fixed;
+  top: 0px;
+  right: 150px; /* Movido para a esquerda */
+  z-index: 10000;
+}
+.profile-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.profile-button:hover {
+  background-color: #1472ff; /* Fundo neon */
+  box-shadow: 0 0 15px #14efff, 0 0 30px #14e4ff; /* Efeito de glow */
+}
+.profile-button i {
+  font-size: 53px;
+  color: #1ea5ff; /* Cor neon */
+  transition: transform 0.3s, color 0.3s;
+}
+.profile-button i:hover {
+  transform: scale(1.2); /* Efeito de aumento */
+  color: #ffffff; /* Mudança de cor neon */
+  text-shadow: 0 0 10px #000000, 0 0 20px #000000, 0 0 30px #000000; /* Efeito de glow */
+}
+.login-menu { /* Nome da classe alterado */
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #27293d;
+  border: 1px solid #18a3ff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  z-index: 100;
+}
+.login-menu h2 {
+  color: #ffffff; /* Cor do título */
+  margin: 0 0 15px; /* Margem abaixo do título */
+  font-size: 24px; /* Tamanho da fonte do título */
+}
+.login-menu form {
+  display: flex;
+  flex-direction: column;
+}
+.login-menu label {
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.login-menu input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333333;
+  color: #ffffff;
+}
+.login-menu input[type="submit"] {
+  position: relative;
+  background-color: transparent; /* Fundo transparente para ver o efeito */
+  color: #fff; /* Cor do texto */
+  border: 2px solid #1ed2ff; /* Borda inicial */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 10px 20px; /* Espaçamento interno */
+  cursor: pointer;
+  overflow: hidden; /* Para ocultar o pseudo-elemento */
+  transition: all 150ms ease-in-out; /* Transição suave */
+  box-shadow: 0 0 40px rgba(30, 109, 255, 0.5) inset, 0 0 0 0 rgba(30, 255, 199, 0.5);
+}
+
+.login-menu input[type="submit"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 30, 30, 0.5); /* Cor azul */
+  transform: scaleY(0); /* Começa invisível */
+  transform-origin: bottom; /* Origem da transformação na parte inferior */
+  transition: transform 0.4s ease; /* Transição suave */
+  z-index: 0; /* Fica atrás do texto do botão */
+}
+
+.login-menu input[type="submit"]:hover::before,
+.login-menu input[type="submit"]:active::before {
+  transform: scaleY(1); /* Preenche o botão ao passar o mouse ou clicar */
+}
+
+.login-menu input[type="submit"]:hover {
+  color: #fff; /* Cor do texto ao passar o mouse */
+  box-shadow: 0 0 10px rgba(30, 255, 180, 0.5), 0 0 10px 4px rgba(30, 255, 143, 0.5); /* Sombra ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+/*CARRINHO DE COMPRA BOTAO*/
+
+  /* Estilo básico da página */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a2e; /* Fundo com uma cor escura para vibe gamer */
+  font-family: 'Arial', sans-serif;
+}
+
+/* Container do carrinho */
+.cart-container {
+  top: 10px;
+  right: 50px;
+  position: fixed; 
+  z-index: 10000;
+}
+
+/* Botão do carrinho */
+.cart-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-button i {
+  font-size: 48px;
+  color: #1ea5ff; /* Cor neon */
+  transition: transform 0.3s, color 0.3s;
+}
+
+.cart-button i:hover {
+  transform: scale(1.2); /* Efeito de aumento */
+  color: #14ffb8; /* Mudança de cor neon */
+  text-shadow: 0 0 10px #1437ff, 0 0 20px #2414ff, 0 0 30px #2414ff; /* Efeito de glow */
+}
+
+/* Menu do carrinho */
+.menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: #27293d;
+  border: 1px solid #444;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  padding: 10px;
+  width: 250px; /* Ajustado para caber os produtos */
+  z-index: 10000;
+  max-height: 400px;
+  overflow-y: auto; /* Adiciona rolagem se houver muitos itens */
+}
+
+/* Estilo para links dentro do menu */
+.menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.menu a:hover {
+  background-color: #444;
+}
+
+/* Estilo dos itens no carrinho */
+.cart-item {
+  background-color: #333;
+  color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center; /* Alinha o conteúdo (imagem e texto) */
+}
+
+.cart-item img {
+  width: 50px; /* Tamanho pequeno da imagem */
+  height: auto;
+  margin-right: 10px; /* Espaço entre a imagem e o texto */
+  border-radius: 5px;
+}
+
+
+.cart-item .cart-item-name {
+  font-weight: bold;
+}
+
+.cart-item .cart-item-price {
+  color: #1ea5ff; /* Cor do preço */
+}
+
+/* Mensagem de carrinho vazio */
+#cartItems {
+  text-align: center;
+  color: #aaa;
+}
+
+
+.cart-item button {
+  background-color: #e74c3c; /* Cor vermelha para indicar remoção */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: auto; /* Coloca o botão no final do item */
+  transition: background-color 0.3s;
+}
+
+.cart-item button:hover {
+  background-color: #c0392b; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+@keyframes removeItem {
+  0% {
+      opacity: 1;
+      transform: translateX(0); /* Começa na posição original */
+  }
+  
+  100% {
+      opacity: 0;
+      transform: translateX(-300px); /* Move mais para a esquerda */
+  }
+}
+
+/* Aplicando a animação ao item quando removido */
+.cart-item.removing {
+  animation: removeItem 3s forwards; /* Animação de remoção */
+}
+
+/* Se desejar adicionar mais transições ou efeitos, use a classe abaixo para quando o item for removido com sucesso */
+.cart-item.removed {
+  display: none; /* Esconde o item após a animação */
+}
+
+
+
+  
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #1f2029;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-top: -140px;
+}
+
+.slide-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slide-list {
+    display: flex;
+}
+
+.slide-item {
+    cursor: grab;
+    flex-shrink: 0;
+    padding: 0 10px;
+    width: 90vw;
+}
+
+.slide-content {
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: #070707 0px 12px 12px;
+    position: relative;
+}
+
+.slide-image {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.slide-description {
+    border-radius: 10px;
+    background: linear-gradient(to top, #000, transparent);
+    color: #fff;
+    position: absolute;
+    padding: 30px;
+    bottom: 0;
+    width: 100%;
+}
+
+.slide-description h3 {
+    font-family: 'Koulen', sans-serif;
+    font-size: 48px;
+    position: relative;
+    top: 16px
+}
+
+.slide-description p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 24px;
+}
+
+.slide-nav-button {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-size: 36px;
+    position: absolute;
+    z-index: 1;
+}
+
+.slide-nav-previous {
+    left: 20px;
+}
+
+.slide-nav-next {
+    right: 20px;
+}
+
+.slide-controls {
+    margin: 30px auto 0;
+}
+
+.slide-control-button {
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+    font-size: 18px;
+    margin: 0 5px;
+}
+
+.slide-control-button:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse */
+  color: #2bff00; /* Muda a cor ao passar o mouse */
+}
+
+.slide-control-button.active {
+    color: #16c9ff;
+}
+
+@media screen and (max-width: 768px) {
+    .slide-description {
+        padding: 10px;
+    }
+    
+    .slide-description h3 {
+        font-size: 24px;
+        top: 0;
+    }
+
+    .slide-description p {
+        display: none;
+    }
+
+    .slide-nav-button {
+        margin-top: -20px;
+        font-size: 28px;
+    }
+    
+    .slide-nav-previous {
+        left: 10px;
+    }
+    
+    .slide-nav-next {
+        right: 10px;
+    }
+
+    .slide-controls {
+        margin: 15px auto 0;
+    }
+
+    .slide-control-button {
+        font-size: 14px;
+    }
+}
+
+
+.categories-section 
+{
+  margin: -8% auto;
+  text-align: center;
+  background-color: #1f2029 ;
+  padding: 20px;
+  color: rgb(0, 255, 170);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.categories-section  h2 {
+  font-size: 3rem; /* Tamanho grande */
+  color: #00ff40; /* Cor inicial */
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+
+  /* Animação */
+  animation: neonGlow 3s infinite;
+}
+
+/* Definição da animação */
+@keyframes neonGlow {
+  0% {
+    color: #00ff40;
+  }
+  33% {
+    color: #00a2ff;
+  }
+  66% {
+    color: #fbff00;
+  }
+  100% {
+    color: #00ffea;
+  }
+}
+.categories-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: 10px;
+  max-width: 100%;
+}
+
+.categories-wrapper {
+  display: flex;
+  gap: 20px;
+  overflow: hidden; /* Esconde as categorias que não estão visíveis */
+  white-space: nowrap;
+  width: 91%; /* Ajuste para que uma categoria seja visível por vez */
+}
+
+.category-box {
+  flex: 0 0 300px; /* Garante que cada categoria tenha largura fixa */
+  text-align: center;
+  margin: 10px;
+  background: linear-gradient(135deg, #15ff00, #1900ff);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.category-box:hover {
+  transform: scale(1.05);
+}
+
+.category-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.view-category-btn {
+  background-color: #ff007f;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animação ao passar o mouse */
+.view-category-btn:hover {
+  background-color: #00ff99;
+  transform: scale(1.1); /* Faz o botão crescer levemente */
+  box-shadow: 0 0 15px rgba(0, 255, 153, 0.7), 0 0 30px rgba(255, 0, 127, 0.5);
+}
+
+/* Efeito pulsante */
+.view-category-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+  opacity: 0;
+}
+
+.view-category-btn:hover::after {
+  transform: translate(-50%, -50%) scale(1.5);
+  opacity: 1;
+}
+
+/* Botões de navegação */
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ff00ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-btn:hover {
+  background-color: #00ff99;
+}
+
+.left-btn {
+  left: 10px;
+}
+
+.right-btn {
+  right: 10px;
+}
+
+
+
+
+.featured-products-section {
+  margin: 200px auto 20px; 
+  text-align: center;
+  background-color: #1f2029;
+  padding: 20px;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.featured-products-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  position: relative; /* Certifique-se de que o cartão de produto tenha posicionamento relativo */
+  background: white;
+  border-radius: 5%;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: 53%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10%;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  color: #00ff99;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+.product-card:hover .add-to-cart-btn {
+  transform: scale(1.05); /* Efeito ao passar o mouse */
+}
+
+.add-to-cart {
+  --color: #fff;
+  --icon: var(--color);
+  --cart: #fff;
+  --dots: #fff;
+  --background: #275efe;
+  --shadow: #{rgba(#00093d, 0.16)};
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 16px;
+  border-radius: 22px;
+  padding: 12px 32px;
+  font-weight: 500;
+  line-height: 20px;
+  transform: scale(var(--s, 0.97));
+  box-shadow: 0 var(--s-y, 4px) var(--s-b, 12px) var(--shadow);
+  color: var(--color);
+  background: var(--background);
+  transition: transform 0.3s, box-shadow 0.3s;
+  .default {
+      padding-left: 16px;
+      position: relative;
+      opacity: var(--o, 1);
+      transform: scale(var(--s, 1));
+      transition: transform 0.3s, opacity 0.3s;
+      transition-delay: var(--d, 0.3s);
+      &:before,
+      &:after {
+          content: "";
+          width: 2px;
+          height: 12px;
+          left: 0;
+          top: 4px;
+          border-radius: 1px;
+          background: var(--icon);
+          position: absolute;
+          transform: rotate(var(--r, 0deg));
+          transition: transform 0.25s;
+      }
+      &:after {
+          --r: 90deg;
+      }
+  }
+  .success {
+      opacity: var(--o, 0);
+      transform: translate(-50%, var(--y, 12px));
+      position: absolute;
+      top: 12px;
+      left: 50%;
+      transition: opacity 0.3s, transform 0.3s;
+      transition-delay: var(--d, 0s);
+  }
+  .dots {
+      width: 4px;
+      height: 4px;
+      top: 20px;
+      left: 50%;
+      margin-left: -7px;
+      border-radius: 2px;
+      position: absolute;
+      transform-origin: 10px 50%;
+      background: var(--dots);
+      box-shadow: 5px 0 0 var(--dots), 10px 0 0 var(--dots);
+      opacity: var(--o, 0);
+      transform: scale(var(--s, 0.4));
+      transition: opacity 0.3s, transform 0.3s;
+      transition-delay: var(--d, 0s);
+  }
+  .cart {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      border-radius: inherit;
+      overflow: hidden;
+      -webkit-mask-image: -webkit-radial-gradient(white, black);
+      &:before {
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 16px;
+          background: var(--background);
+          top: 17px;
+          right: 100%;
+          z-index: 1;
+          margin-right: -20px;
+          transform: translateX(-18px) rotate(-16deg);
+      }
+      & > div {
+          top: 13px;
+          right: 100%;
+          transform: translateX(-18px) rotate(-16deg);
+          position: absolute;
+          z-index: 2;
+          transform-origin: 1px 21px;
+          &:before,
+          &:after {
+              content: "";
+              position: absolute;
+              top: var(--t, 4px);
+              left: var(--l, 0);
+              height: 2px;
+              width: var(--w, 18px);
+              background: var(--cart);
+              border-radius: 1px;
+          }
+          &:after {
+              --w: 16px;
+              --t: 14px;
+              --l: 1px;
+          }
+          & > div {
+              width: 2px;
+              height: var(--h, 15px);
+              border-radius: 1px;
+              transform: rotate(var(--r, -8deg));
+              background: var(--cart);
+              position: relative;
+              &:before,
+              &:after {
+                  content: "";
+                  position: absolute;
+                  background: inherit;
+              }
+              &:after {
+                  width: 4px;
+                  height: 4px;
+                  border-radius: 2px;
+                  bottom: var(--b, -6px);
+                  left: var(--l, 0);
+              }
+              &:first-child {
+                  &:before {
+                      border-radius: inherit;
+                      top: 0;
+                      right: 0;
+                      height: 2px;
+                      width: 6px;
+                      transform-origin: 5px 1px;
+                      transform: rotate(16deg);
+                  }
+              }
+              &:last-child {
+                  --h: 12px;
+                  --r: 8deg;
+                  position: absolute;
+                  left: 16px;
+                  bottom: -1px;
+                  &:after {
+                      --l: -2px;
+                      --b: -5px;
+                  }
+              }
+          }
+      }
+  }
+  &.added {
+      .default {
+          --o: 0;
+          --s: 0.8;
+          --d: 0s;
+          &:before {
+              --r: -180deg;
+          }
+          &:after {
+              --r: -90deg;
+          }
+      }
+      .dots {
+          --o: 1;
+          --s: 1;
+          --d: 0.3s;
+          animation: dots 2s linear forwards;
+      }
+      .success {
+          --o: 1;
+          --y: 0;
+          --d: 1.8s;
+      }
+      .cart {
+          &:before,
+          & > div {
+              animation: cart 2s forwards;
+          }
+      }
+  }
+  &:not(.added) {
+      &:hover {
+          --s: 1;
+          --s-y: 8px;
+          --s-b: 20px;
+      }
+      &:active {
+          --s: 0.94;
+          --s-y: 2px;
+          --s-b: 6px;
+      }
+  }
+}
+
+@keyframes cart {
+  41%,
+  49%,
+  57%,
+  60% {
+      transform: translateX(110px) rotate(0deg);
+  }
+  40%,
+  47%,
+  54% {
+      transform: translateX(110px) rotate(0deg) translateY(1px);
+  }
+  100% {
+      transform: translateX(280px) rotate(-16deg);
+  }
+}
+
+@keyframes dots {
+  5% {
+      transform: translateY(0);
+  }
+  25% {
+      transform: translateY(-20px) rotate(-32deg);
+      box-shadow: 5px 0 0 var(--dots), 10px 0 0 var(--dots);
+  }
+  31% {
+      box-shadow: 5px -4px 0 var(--dots), 10px -8px 0 var(--dots);
+  }
+  32%,
+  50% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+  }
+  45%,
+  100% {
+      box-shadow: 5px 0 0 var(--dots), 10px 0 0 var(--dots);
+  }
+  51%,
+  100% {
+      opacity: 0;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+  &:before,
+  &:after {
+      box-sizing: inherit;
+  }
+}
+
+
